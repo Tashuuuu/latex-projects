@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,pst-plot,pstricks,graphicx}
+\title{\textbf{Final Practical}\\Set-A}
+\author{Akriti Sengar \ \\ 20066563004}
+\date{October $30^{\text{th}}$, 2021}
+\begin{document}
+	\maketitle	
+	
+	\noindent \textbf{Solution 2.}
+	\begin{center}
+		\begin{pspicture}(-0.25,-4.25)(7.5,4.25)
+			\psset{xunit=3cm,yunit=3cm}
+			\psaxes{->}(0,0)(0,-1.25)(2.25,1.25)
+			\psplot[plotpoints=500,linewidth=0.08,linecolor=purple]{0.025}{2}{2 x exp RadtoDeg sin}
+			\psplot[plotpoints=500,linestyle=dotted,linewidth=0.08,linecolor=teal]{0.025}{2}{2 x exp RadtoDeg cos}
+			\put(7,-0.5){$x$}
+			\put(7,-0.5){$x$}
+			\put(-0.5,4){$y$}
+			\put(3,3){$y = \sin{x^2}$}	
+			\put(3,-3.4){$y = \cos{x^2}$}
+		\end{pspicture}
+	\end{center}
+	\newpage
+	\noindent \textbf{Solution 4.}	
+	\begin{center}
+		\begin{pspicture}(4,6)
+			\pscircle(2,3){2}
+			\pswedge[fillstyle=solid,fillcolor=blue](2,3){2}{0}{60}
+			\pswedge[fillstyle=solid,fillcolor=yellow](2,3){2}{60}{120}
+			\pswedge[fillstyle=solid,fillcolor=green](2,3){2}{120}{180}
+			\pswedge[fillstyle=solid,fillcolor=red](2,3){2}{180}{240}
+			\pswedge[fillstyle=solid,fillcolor=purple](2,3){2}{240}{300}
+			\pswedge[fillstyle=solid,fillcolor=white](2,3){2}{300}{360}
+			\psline[linestyle=dashed,linecolor=magenta,linewidth=0.09](0,1)(0,5)(4,5)(4,1)(0,1)
+			\put(-0.2,0.6){\textbf{Different sectors of circle}}
+		\end{pspicture}
+	\end{center}
+	
+	\noindent \textbf{Solution 5.}
+	\begin{enumerate}
+		\item[(a)] $ \left\langle z^s,z^t \right\rangle  = \begin{cases}
+			\frac{1}{s+1} \quad \text{if} \quad s=t \\
+			0, \; \; \quad \text{otherwise.}
+		\end{cases}$
+		\item[(b)] $P_{L^2_a}(\bar{z}^tz^s) =\begin{cases}
+			\frac{s-1+1}{s+1}z^{s-t} \quad \text{if} \quad s \geq t \\
+			0, \quad \quad \; \; \quad \quad \text{otherwise.}
+		\end{cases} $
+	\end{enumerate}
+	The \textbf{adjoint} of the matrix of $T_\phi$ is given by
+	\[T^\star_\phi = \left[ \begin{array}{ccccc}
+		\overline{a_0} & \frac{1}{\sqrt{2}}\overline{a_1} & \frac{1}{\sqrt{3}}\overline{a_2} & \frac{1}{2}\overline{a_3} & \dots \\ 
+		\frac{1}{\sqrt{2}}\overline{b_1} & \overline{a_0} & \sqrt{\frac{2}{3}}\overline{a_1} & \frac{1}{\sqrt{2}}\overline{a_2} & \dots \\ 
+		\frac{1}{\sqrt{3}}\overline{b_2} & \sqrt{\frac{2}{3}}\overline{b}_1 & \overline{a_0} & \frac{\sqrt{3}}{2}\overline{a_1} & \dots \\
+		\frac{1}{2}\overline{b_3} & \frac{1}{\sqrt{2}}\overline{b_2} & \frac{\sqrt{3}}{2}\overline{b_1} & \overline{a_0} & \dots \\
+		\vdots & \vdots & \vdots & \vdots & 
+	\end{array} \right] \]
+	
+\end{document}

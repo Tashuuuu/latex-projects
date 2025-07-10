@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,pst-plot,pstricks,graphicx}
+\title{\textbf{Mock Test}\\Set-A}
+\author{Akriti Sengar \ \\2020705}
+\date{December $6^{\text{th}}$, 2021}
+\begin{document}
+	\maketitle
+	\noindent \textbf{Q2. Plot the curve $y=\cos(\frac{1}{x^2})$ for $0<x\leq 2\pi$.}
+	\begin{center}
+	\begin{pspicture}(-5,-5)(6,6)
+	\psset{xunit=1.5cm,yunit=1.5cm}
+	\psaxes[linecolor=black]{<->}(0,0)(-2,-2)(7,3)
+	\psset{plotpoints=500}
+	\psplot[linecolor=pink,linewidth=0.04]{0.001}{6.28}{1 x 2 exp div RadtoDeg cos}
+	\put(10.7,0){$x$}
+	\put(-0.25,4.5){$y$}
+\end{pspicture}
+	\end{center}
+	
+	\noindent \textbf{Q4. Draw the following figure}
+	\begin{center}
+	\begin{pspicture}(4,6)
+	\pscircle(2,3){2}
+	\pswedge[fillstyle=solid,fillcolor=green,linecolor=blue,linewidth=0.1](2,3){2}{0}{70}
+	\put(2.4,3.2){$\theta$}
+	\put(3,2.6){$r$}
+	\put(3.6,4.6){$A=r\theta$}
+	\put(0.5,3.9){\textbf{Sector}}
+	\put(0.5,3.4){\textbf{of}}	
+	\put(0.5,2.9){\textbf{circle}}
+	\put(0.5,2.4){\textbf{with radius}}
+	\put(1.5,1.9){\textbf{$r$}}
+\end{pspicture}
+	\end{center}
+
+	\noindent \textbf{Q5. Type the following expression}
+	\[\left\langle T_\phi e_n,e_m \right\rangle = \begin{cases}
+		\sqrt{\frac{m!}{n!}} a_{m-n} \quad \text{for} \quad m\geq n \\
+		\sqrt{\frac{n!}{m!}} b_{n-m} \quad \text{for} \quad n > m
+	\end{cases} \]
+where $m$ and $n$ are non-negative integers. The adjoint of the matrix of $T_\phi$ is given by
+\[T^\star_\phi = \left( \begin{array}{ccccc}
+	\bar{a}_0 & \bar{a}_1 & \sqrt{2}\bar{a}_2 & \sqrt{6}\bar{a}_3 & \dots \\ 
+	\bar{b}_1 & \bar{a}_0 & \sqrt{2}\bar{a}_1 & \sqrt{6}\bar{a}_2 & \dots \\ 
+	\sqrt{2}\bar{b}_2 & \sqrt{2}\bar{b}_1 & \bar{a}_0 & \sqrt{3}\bar{a}_1 & \dots \\
+	\sqrt{6}\bar{b}_3 & \sqrt{6}\bar{b}_2 & \sqrt{3}\bar{b}_1 & \bar{a}_0 & \dots \\
+	\vdots & \vdots & \vdots & \vdots & 
+\end{array} \right) \]
+which is the matrix of $ T_{\hat{\phi}} $ where $\hat{\phi}(z) = \Sigma_{i=0}^{\infty} \bar{a}_i \bar{z}^i + \Sigma_{j=1}^{\infty} \bar{b}_j z^j$ \\  which is nothing but $\bar{\phi}(z)$. So we get that $T^\star_\phi = T_{\bar{\phi}}$
+
+\noindent \textbf{Q6. Plot the curve given by the parametric equations.}
+\[x=\cos t(1-\cos t)\]
+\[y=\sin t(1-\cos t)\] $0\leq t\leq \frac{3\pi}{2}$\\
+\begin{pspicture}(-7,-6)(6,6)
+	\psset{xunit=3cm,yunit=3cm}
+	\psaxes[ticks=none,labels=none,linecolor=black]{<->}(0,0)(-2.5,-1.5)(0.5,1.5)
+	\parametricplot[plotpoints=500,arrows=->,arrowscale=1.5,linecolor=pink,linewidth=0.09]{0}{270}{t cos 1 t cos sub mul t sin 1 t cos sub mul}
+	\put(1.5,-0.25){$x$}
+	\put(-0.25,4.5){$y$}
+\end{pspicture}
+	
+\end{document}

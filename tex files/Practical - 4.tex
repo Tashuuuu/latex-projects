@@ -1,0 +1,133 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,graphicx}
+\title{\textbf{Practical - 4}\\Images in Latex}
+\author{Akriti Sengar \\ $2020705$}
+\date{September $16^{\text{th}}$, 2021}
+\begin{document}
+	\maketitle
+
+\noindent \textbf{Q1. Include the images of trigonometric functions.}\\
+\begin{enumerate}
+	\item Graph of $\sin x $:\\\\
+	\begin{figure}[h!]
+		\begin{center}
+			\includegraphics[width=3.5in,height=1in]{Graph of sine}
+		\end{center}
+		\caption{Sin x}
+		\label{sin x}
+	\end{figure}
+
+\item Graph of $\cos x $:\\\\
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=3.5in,height=1in]{Graph of cosine}
+	\end{center}
+	\caption{Cos x}
+	\label{cos x}
+\end{figure}
+
+\item Graph of $\tan x $:\\\\
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=3.5in,height=1in]{Graph of tangent}
+	\end{center}
+	\caption{Tan x}
+	\label{tan x}
+\end{figure}
+
+\item Graph of $\csc x $:\\\\
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=3.5in,height=1in]{Graph of cosec}
+	\end{center}
+	\caption{Cosec x}
+	\label{cosec x}
+\end{figure}
+
+\item Graph of $\sec x $:\\\\
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=3.5in,height=1in]{Graph of sec}
+	\end{center}
+	\caption{Sec x}
+	\label{sec x}
+\end{figure}
+
+\newpage
+
+\item Graph of $\cot x $:\\\\
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=3.5in,height=1in]{Graph of cot}
+	\end{center}
+	\caption{Cot x}
+	\label{cot x}
+\end{figure}
+\end{enumerate}
+
+\noindent \textbf{Q2. Write an article on "Probability". Give its geometrical interpretations.}\\
+\noindent \textbf{Solution:} Probability is simply how likely something is to happen. Whenever we’re unsure about the outcome of an event, we can talk about the probabilities of certain outcomes—how likely they are. The analysis of events governed by probability is called statistics.\\ Probability means possibility. It is a branch of mathematics that deals with the occurrence of a random event. The value is expressed from zero to one. Probability has been introduced in Maths to predict how likely events are to happen. The meaning of probability is basically the extent to which something is likely to happen. This is the basic probability theory, which is also used in the probability distribution, where you will learn the possibility of outcomes for a random experiment. To find the probability of a single event to occur, first, we should know the total number of possible outcomes.\\
+
+\noindent \textbf{\large{1-dimensional Geometric Probability.}} \\\\
+\noindent \textbf{Example:} $X$ is a random real number between $0$ and $3$. What is the probability $X$ is closer to $0$ than it is to $1$? \\ Since there are infinitely many possible outcomes for the value of $X$, we will take the equally likely outcomes as random points along the number line from $0$ to $3$. It’s easy to see that $X$ will be closer to $0$ than it is to $1$ if $X<0.5$.\\
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=2in,height=0.772in]{Probability line}
+	\end{center}
+	\caption{Probability line}
+	\label{Probability line}
+\end{figure}
+
+\noindent Now, we can use the measures (lengths, in this 1D case) of our possible outcomes and apply the usual probability formula. \\ Here, \[P(X \;  \text{is closer to} \; 0 \; \text{than to} \; 1) = \frac{\text{length of segment where} \; 0<X<0.5}{\text{length of segment where} \; 0<X<3}\]
+\[= \frac{0.5}{3} = \frac{1}{6} \approx 17\%\]
+
+\noindent \textbf{Example:} There are two possible outcomes—heads or tails.
+What’s the probability of the coin landing on Heads? We can find out using the equation $P(H) = ?P(H)=?P$.You might intuitively know that the likelihood is half/half, or $50$\%.\\
+
+\noindent But how do we work that out?\\ Probability = \\
+\begin{center}
+	\includegraphics[width=5in,height=1in]{Probability}
+\end{center}
+
+\noindent In this case:\\
+\begin{center}
+	\includegraphics{P(H)}
+\end{center}
+
+\noindent \textbf{Probability of an event = (\# of ways it can happen) / (total number of outcomes)}\\
+\noindent P(A) = (\# of ways A can happen) / (Total number of outcomes)\\\\
+
+\noindent \textbf{Example 1:} There are six different outcomes.\\
+\begin{center}
+	\includegraphics{0}
+\end{center}
+
+\noindent What’s the probability of rolling a one?\\
+\begin{center}
+	\includegraphics{P(1)}
+\end{center}
+
+\noindent What’s the probability of rolling a one or a six?\\
+\begin{center}
+	\includegraphics{2}
+\end{center}
+
+\noindent Using the formula from above:\\
+\begin{center}
+	\includegraphics{P(1 or 6)}
+\end{center}
+
+\noindent What’s the probability of rolling an even number (i.e., rolling a two, four or a six)?\\
+\begin{center}
+	\includegraphics{P(even)}
+\end{center}
+
+\noindent \textbf{Tips:}\\
+\begin{enumerate}
+	\item The probability of an event can only be between $0$ and $1$ and can also be written as a percentage.
+	\item The probability of event $A$ is often written as $P(A)$.
+	\item If $P(A) > P(B)$, then event $A$ has a higher chance of occurring than event $B$.
+	\item $If P(A) = P(B)$,then events $A$ and $B$ are equally likely to occur.
+\end{enumerate}
+\end{document}

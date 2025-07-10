@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,pstricks}
+\title{\textbf{Practical - 5}\\P.S. Tricks}
+\author{Akriti Sengar \\ $2020705$}
+\date{September $21^{\text{st}}$, 2021}
+\begin{document}
+\maketitle
+\noindent \textbf{Q1. Using pstricks package make lines, a vector, triangle, circle, square and rectangle.}
+\begin{enumerate}
+\item Line:\\
+\begin{pspicture}(4,4)
+\psline(0,0)(10,4)
+\end{pspicture}
+	
+        \item Dotted line:\\
+        \begin{pspicture}(3,5)
+        	\psline[linestyle=dotted,linewidth=0.07](0,0)(6,4)
+        \end{pspicture}	
+    
+		\item Vector:\\ 
+		\begin{pspicture}(4,4)
+			\psline{->}(0,0)(2.5,3.99)
+		\end{pspicture}	
+		
+		\item Isosceles triangle:\\
+		\begin{pspicture}(13,13)
+			\psline(0,0)(12,10)(9,2)(0,0)
+		\end{pspicture}
+\newpage
+		\item Circle:\\
+		\begin{pspicture}(5,5)
+			\pscircle(1.888889,2.8){1.99999}
+		\end{pspicture}
+	
+	    \item Square:\\
+	    \begin{pspicture}(4.4,4.4)
+	    	\psline(0.2,0.2)(0.2,4)(4,4)(4,0.2)(0.2,0.2)
+	    \end{pspicture}
+	   
+		\item Rectangle:\\
+		\begin{pspicture}(8,8)
+			\psline(0.25,7.5)(12,7.5)(12,2)(0.25,2)(0.25,7.5)
+		\end{pspicture}
+	\end{enumerate}
+
+\noindent \textbf{Draw complex figures using P.S. Tricks.}
+\begin{enumerate}
+	\item Example:\\
+	\begin{pspicture}(6,6)
+		\psline(1,4)(1,1)(5,1)(1,4)
+		\pscircle[fillstyle=solid,fillcolor=blue](2,2){1}
+		\pscircle[linestyle=dotted,linewidth=0.1](3,2.5){2.5}
+	\end{pspicture}
+	
+	\item Phineas:\\
+	\begin{pspicture}(10,10)
+	\psline[fillstyle=solid,fillcolor=pink](2,7)(9,5)(4,2)
+	\psline[fillstyle=solid,fillcolor=pink](2,7)(1.5,6.8)(2.6,5.55)
+	\psline[fillstyle=solid,fillcolor=pink](4,2)(3.6,2)(3.53,3.2)
+	\psarc(-2.4,2.2){6}{358}{48}
+	\psarc(7.8,7){4.4}{215}{243}
+	\psellipse[fillstyle=solid,fillcolor=white](5.5,6)(0.9,0.7)
+	\psarc(6.3,5.8){0.8}{345}{105}
+	\psellipse[fillstyle=solid,fillcolor=black](6.17,6)(0.2,0.34)
+	\psellipse[fillstyle=solid,fillcolor=black](6.9,5.88)(0.2,0.34)
+	\pscircle[fillstyle=solid,fillcolor=white](6.15,6.2){0.09}
+	\pscircle[fillstyle=solid,fillcolor=white](6.88,6.07){0.09}
+	\pscircle[fillstyle=solid,fillcolor=brown](2.5,6.5){0.06}
+	\pscircle[fillstyle=solid,fillcolor=brown](3,6.3){0.06}
+	\pscircle[fillstyle=solid,fillcolor=brown](2.75,6){0.06}
+	\psarc[fillstyle=solid,fillcolor=pink](3,4.4){0.35}{70}{320}
+	\psarc(2.94,4.5){0.1}{0}{255}
+	\psarc(2.94,4.3){0.1}{70}{355}
+	\psline[fillstyle=solid,fillcolor=red](1.8,6.5)(1.6,5.8)(1.4,6.3)(1.05,5.9)(1,6.5)(0.4,6.5)(1.5,6.9)(1.3,7.6)(1.6,7.2)(2.7,8)(2.2,7.2)(2.6,7.35)(2,7)
+	\end{pspicture}
+\newpage
+    \item Star:\\
+    \begin{pspicture}(6,6)
+    	\psline[fillstyle=solid,fillcolor=orange](1.2,3.3)(-0.75,3)(1,2.2)(0.2,0.2)(2,1.25)(3.8,0.2)(3,2.2)(4.5,3)(2.8,3.3)(2,5)(1.2,3.3)
+    \end{pspicture}	
+\end{enumerate}
+
+\end{document}
